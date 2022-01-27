@@ -318,21 +318,20 @@ CONFIG_FILE="config.json"
 
 cat >$CONFIG_FILE <<-EOM
 {
-    "price": 0.1,
-    "number": $ITEMS,
+    "price": 1.0,
+    "number": 10,
     "gatekeeper": null,
-    "solTreasuryAccount": "$(solana address)",
+    "solTreasuryAccount": "VU5pKjqwAmu2QpThxV2EaqHyzssdpPEuv4XKFSy52nu",
     "splTokenAccount": null,
     "splToken": null,
-    "goLiveDate": "$(date "+%d %b %Y %T %Z")",
+    "goLiveDate": "25 Dec 2021 00:00:00 GMT",
     "endSettings": null,
     "whitelistMintSettings": null,
     "hiddenSettings": null,
-    "storage": "${STORAGE}",
-    "arweaveJwk": "${ARWEAVE_JWK}",
-    "ipfsInfuraProjectId": "${INFURA_ID}",
-    "ipfsInfuraSecret": "${INFURA_SECRET}",
-    "awsS3Bucket": "${AWS_BUCKET}",
+    "storage": "arweave-sol",
+    "ipfsInfuraProjectId": null,
+    "ipfsInfuraSecret": null,
+    "awsS3Bucket": null,
     "noRetainAuthority": false,
     "noMutable": false
 }
